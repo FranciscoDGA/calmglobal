@@ -18,7 +18,8 @@ export default function SobrePage() {
         <div>
           <h1 className="font-serif text-3xl font-bold text-dark-900">Sobre o {siteConfig.name}</h1>
           <p className="mt-1 text-gray-500">
-            Por <strong className="text-gray-700">Francisco Gomes</strong> · Autor e fundador
+            Por <strong className="text-gray-700">Francisco Gomes</strong> · Pastor e Terapeuta em
+            TRG e ETF
           </p>
         </div>
       </div>
@@ -31,22 +32,26 @@ export default function SobrePage() {
         */}
         <h2>Minha história</h2>
         <p>
-          Olá, eu sou <strong>Francisco Gomes</strong>, autor e fundador do {siteConfig.name}.
-          Assim como muita gente, senti na pele como a vida digital — o excesso de notificações, a
-          comparação nas redes sociais e a pressão por estar sempre disponível — pode alimentar a
-          ansiedade no dia a dia.
+          Olá, eu sou <strong>Francisco Gomes</strong>, autor e fundador do {siteConfig.name}. Sou{' '}
+          <strong>pastor</strong> e <strong>terapeuta em TRG</strong> (Terapia de Reprocessamento
+          Generativo) <strong>e ETF</strong> (Técnicas de Libertação Emocional). Ao longo da minha
+          caminhada, aprendi que o cuidado com as emoções e o acolhimento fazem toda a diferença na
+          vida das pessoas.
         </p>
         <p>
-          Foi essa experiência que me motivou a criar este espaço: um lugar para reunir, de forma
-          simples e acessível, técnicas e informações que realmente ajudam a lidar com a ansiedade
-          na era digital.
+          Criei este espaço para reunir, de forma simples e acessível, técnicas e informações que
+          realmente ajudam a lidar com a ansiedade na era digital — e para oferecer apoio a quem
+          precisa de uma escuta cuidadosa.
         </p>
         <p className="text-sm text-gray-500">
-          {/* Substitua pelo seu texto real */}
+          {/* Francisco: personalize com mais detalhes reais da sua trajetória, se quiser. */}
           <em>
-            (Espaço reservado para você contar sua jornada pessoal, sua formação e o que te
-            trouxe até aqui.)
+            (Você pode acrescentar aqui mais detalhes da sua jornada pessoal e da sua formação.)
           </em>
+        </p>
+        <p>
+          👉 Precisa de apoio individual?{' '}
+          <a href="/atendimento">Conheça meu atendimento e agende uma conversa gratuita</a>.
         </p>
 
         <h2>Nossa missão</h2>
