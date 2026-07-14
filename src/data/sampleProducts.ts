@@ -36,6 +36,8 @@ export const sampleProducts: Product[] = [
       'E-book completo com 20 técnicas e exercícios práticos para dominar a ansiedade causada por IA, redes sociais e a vida moderna. 50 páginas.',
     price: 49.9,
     type: 'ebook',
+    // 👉 Cole aqui o link de checkout da Hotmart deste e-book:
+    checkout_url: '',
     benefits: [
       '50 páginas com 20 técnicas comprovadas pela ciência',
       'Exercícios práticos ao final de cada capítulo',
@@ -64,6 +66,8 @@ export const sampleProducts: Product[] = [
       'Curso em 10 módulos (vídeo + PDF) com um plano diário para transformar sua relação com a ansiedade em 21 dias.',
     price: 297,
     type: 'curso',
+    // 👉 Cole aqui o link de checkout da Hotmart deste curso:
+    checkout_url: '',
     benefits: [
       '10 módulos em vídeo + PDFs de apoio',
       'Plano diário guiado por 21 dias',

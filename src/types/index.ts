@@ -28,6 +28,8 @@ export type Product = {
   /** Preço "de" — use APENAS em promoções reais (nunca âncora fictícia). */
   old_price?: number | null;
   type: 'ebook' | 'curso' | 'template';
+  /** URL de checkout externo (ex.: Hotmart). Quando presente, o botão "Comprar" abre este link. */
+  checkout_url?: string | null;
   /** Lista de benefícios do produto (bullet points de conversão). */
   benefits?: string[];
   /** Perguntas frequentes específicas do produto. */

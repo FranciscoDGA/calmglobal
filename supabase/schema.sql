@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS products (
   price DECIMAL(10, 2) NOT NULL DEFAULT 0,
   old_price DECIMAL(10, 2),            -- preço "de" (apenas promoções reais)
   type TEXT NOT NULL,                  -- 'ebook' | 'curso' | 'template'
+  checkout_url TEXT,                   -- link de checkout externo (ex.: Hotmart)
   benefits JSONB,                      -- array de benefícios (string[])
   faq JSONB,                           -- array de { question, answer }
   download_url TEXT,

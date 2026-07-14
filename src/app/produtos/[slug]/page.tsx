@@ -100,6 +100,10 @@ export default async function ProdutoPage({ params }: { params: { slug: string }
                   Download em breve
                 </Button>
               )
+            ) : product.checkout_url ? (
+              <Button href={product.checkout_url} size="lg">
+                Comprar agora
+              </Button>
             ) : (
               <Button size="lg" disabled>
                 Compra em breve
@@ -114,9 +118,11 @@ export default async function ProdutoPage({ params }: { params: { slug: string }
                 <span className="inline-flex items-center gap-1">🔒 Pagamento seguro</span>
                 <span className="inline-flex items-center gap-1">⚡ Acesso imediato</span>
               </div>
-              <p className="mt-3 text-sm text-gray-500">
-                O checkout (Stripe/Pix) será ativado na próxima fase do projeto.
-              </p>
+              {!product.checkout_url && (
+                <p className="mt-3 text-sm text-gray-500">
+                  Botão de compra será ativado assim que o link da Hotmart for adicionado.
+                </p>
+              )}
             </>
           )}
         </div>
