@@ -2,31 +2,53 @@
 
 import { useState, type FormEvent } from 'react';
 
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+const GUIA_PDF = '/ebook/kit-anti-ansiedade.pdf';
+
 /**
- * Seção de captura de e-mails (newsletter + isca do guia gratuito).
- * Front-end apenas — a integração com Mailchimp/ConvertKit entra em fase posterior.
+ * Seção de captura de e-mails (isca do guia gratuito).
+ * Captura o e-mail e LIBERA o download do guia — a troca que gera o lead.
+ * Registra o contato via Web3Forms quando NEXT_PUBLIC_WEB3FORMS_KEY existe.
  */
 export function Newsletter({
   title = 'Baixe o Guia Gratuito',
-  subtitle = 'Receba 10 técnicas para controlar a ansiedade em PDF + dicas semanais no seu e-mail.',
+  subtitle = 'Deixe seu e-mail e receba na hora o Kit Anti-Ansiedade (PDF) com 10 técnicas + checklist.',
 }: {
   title?: string;
   subtitle?: string;
 }) {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
-  const [done, setDone] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle');
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!valid) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError('Digite um e-mail válido.');
       return;
     }
     setError('');
-    // TODO: integrar com Mailchimp/ConvertKit
-    setDone(true);
+    setStatus('sending');
+
+    if (WEB3FORMS_KEY) {
+      try {
+        await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_KEY,
+            subject: 'Novo lead — Kit Anti-Ansiedade',
+            email,
+            message: 'Novo download do guia gratuito (Kit Anti-Ansiedade).',
+            from_name: 'Calma Global',
+          }),
+        });
+      } catch {
+        /* mesmo se falhar o registro, liberamos o download */
+      }
+    }
+
+    setStatus('done');
   }
 
   return (
@@ -35,10 +57,17 @@ export function Newsletter({
         <h3 className="text-2xl font-bold">{title}</h3>
         <p className="mt-2 text-white/90">{subtitle}</p>
 
-        {done ? (
-          <p className="mt-6 rounded-lg bg-white/15 px-4 py-3 font-medium">
-            ✓ Tudo certo! Em breve você receberá o guia no seu e-mail.
-          </p>
+        {status === 'done' ? (
+          <div className="mt-6 rounded-lg bg-white/15 px-4 py-4">
+            <p className="font-medium">✓ Tudo certo! Seu guia está liberado.</p>
+            <a
+              href={GUIA_PDF}
+              download
+              className="mt-3 inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-primary-600 transition-colors hover:bg-gray-100"
+            >
+              📥 Baixar o guia em PDF
+            </a>
+          </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-3 sm:flex-row">
             <input
@@ -51,9 +80,10 @@ export function Newsletter({
             />
             <button
               type="submit"
-              className="rounded-lg bg-white px-6 py-3 font-semibold text-primary-600 transition-colors hover:bg-gray-100"
+              disabled={status === 'sending'}
+              className="rounded-lg bg-white px-6 py-3 font-semibold text-primary-600 transition-colors hover:bg-gray-100 disabled:opacity-70"
             >
-              Quero o guia
+              {status === 'sending' ? 'Liberando...' : 'Quero o guia'}
             </button>
           </form>
         )}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Button, Container } from '@/components/ui';
 import { Testimonials } from '@/components/marketing/Testimonials';
+import { LeadMagnetForm } from '@/components/marketing/LeadMagnetForm';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getProductBySlug, getProducts } from '@/lib/products';
 import { formatPrice } from '@/lib/utils';
@@ -93,9 +94,7 @@ export default async function ProdutoPage({ params }: { params: { slug: string }
           <div className="mt-6">
             {isFree ? (
               product.download_url ? (
-                <Button href={product.download_url} size="lg">
-                  Baixar agora
-                </Button>
+                <LeadMagnetForm downloadUrl={product.download_url} title={product.title} />
               ) : (
                 <Button size="lg" disabled>
                   Download em breve
