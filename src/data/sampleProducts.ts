@@ -4,16 +4,17 @@ import type { Product } from '@/types';
 export const sampleProducts: Product[] = [
   {
     id: '10000000-0000-0000-0000-000000000001',
-    title: 'Guia Gratuito: 10 Técnicas para Controlar a Ansiedade',
+    title: 'Kit Anti-Ansiedade: 10 Técnicas para Controlar a Ansiedade',
     slug: 'guia-gratis-10-tecnicas-ansiedade',
     description:
-      'Baixe nosso guia gratuito com 10 técnicas comprovadas pela ciência para reduzir a ansiedade em minutos. Inclui checklist para imprimir.',
+      'Baixe gratuitamente o Kit Anti-Ansiedade: 10 técnicas comprovadas pela ciência, com exercícios práticos e checklist diário para imprimir.',
     price: 0,
     type: 'ebook',
     benefits: [
-      '10 técnicas passo a passo, prontas para usar',
+      '10 técnicas passo a passo, com exercício prático em cada uma',
       'Checklist diário para imprimir e colar na geladeira',
-      'Lista de apps e recursos recomendados',
+      'Rotina anti-ansiedade (manhã, dia e noite)',
+      'Lista de apps, livros e onde buscar ajuda',
       'Acesso imediato após o cadastro',
     ],
     faq: [

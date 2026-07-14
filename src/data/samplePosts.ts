@@ -9,6 +9,118 @@ import type { Post } from '@/types';
  */
 export const samplePosts: Post[] = [
   {
+    id: '00000000-0000-0000-0000-000000000004',
+    title: '10 Sintomas de Ansiedade que Você Pode Ter (e Não Sabe)',
+    slug: 'sintomas-de-ansiedade',
+    category: 'sintomas-ansiedade',
+    language: 'pt-br',
+    featured_image:
+      'https://images.unsplash.com/photo-1541199249251-f713e6145474?w=1200&q=80',
+    image_alt: 'Pessoa com expressão de preocupação apoiando a cabeça nas mãos, representando sintomas de ansiedade',
+    excerpt:
+      'A ansiedade nem sempre é óbvia. Conheça 10 sintomas físicos, emocionais e comportamentais que muita gente tem sem perceber — e quando é hora de buscar ajuda.',
+    published_at: '2026-07-15T09:00:00Z',
+    updated_at: '2026-07-15T09:00:00Z',
+    content: `**Coração acelerado, dor no estômago, dificuldade para dormir, irritação sem motivo aparente.** Muita gente convive com sinais como esses todos os dias sem imaginar que têm uma origem comum: a ansiedade. Ela nem sempre aparece como uma "crise" evidente — muitas vezes se disfarça em sintomas físicos e comportamentais que parecem não ter relação entre si.
+
+Neste artigo, você vai conhecer **10 sintomas de ansiedade** que passam despercebidos, entender por que eles acontecem e descobrir quando é hora de procurar ajuda profissional. Reconhecer os sinais é o primeiro passo para cuidar de você.
+
+> ⚠️ Este conteúdo é informativo e não substitui uma avaliação profissional. Apenas um médico ou psicólogo pode fazer um diagnóstico.
+
+## O que é ansiedade (rapidamente)
+
+A ansiedade é uma resposta natural do corpo a situações percebidas como ameaça. Ela ativa o sistema nervoso e libera hormônios como adrenalina e cortisol, preparando o organismo para "lutar ou fugir". O problema surge quando esse estado de alerta se torna **frequente, intenso ou desproporcional** — aí ele deixa de proteger e passa a atrapalhar.
+
+Segundo a Organização Mundial da Saúde (OMS), os transtornos de ansiedade estão entre os mais comuns do mundo, e sua prevalência cresceu de forma expressiva nos últimos anos. A boa notícia: quanto antes os sintomas são reconhecidos, mais fácil é lidar com eles.
+
+## Sintomas físicos
+
+A ansiedade "fala" através do corpo. Estes são alguns dos sinais físicos mais comuns.
+
+### 1. Coração acelerado (taquicardia)
+
+Aquela sensação de que o coração vai "sair pela boca", mesmo em repouso, é um dos sintomas mais clássicos. Acontece porque a adrenalina aumenta a frequência cardíaca para preparar o corpo para agir. Muita gente confunde com problema cardíaco — e o susto acaba alimentando ainda mais a ansiedade.
+
+### 2. Falta de ar ou respiração curta
+
+A respiração fica rápida e superficial, dando a impressão de que não entra ar suficiente. Esse padrão respiratório reforça a sensação de perigo e pode desencadear tontura e formigamento.
+
+### 3. Tensão muscular e dores
+
+Ombros travados, mandíbula apertada, dores nas costas e no pescoço são comuns em quem vive ansioso. O corpo permanece "contraído", como se estivesse sempre pronto para reagir, e isso gera dor e cansaço.
+
+### 4. Problemas digestivos
+
+Dor de estômago, enjoo, azia, diarreia ou aquela sensação de "frio na barriga" têm ligação direta com a ansiedade. O intestino é tão sensível às emoções que muitos o chamam de "segundo cérebro".
+
+### 5. Cansaço constante
+
+Manter o corpo em estado de alerta consome muita energia. Por isso, é comum sentir fadiga mesmo sem ter feito grandes esforços — um cansaço que o sono nem sempre resolve.
+
+## Sintomas emocionais e mentais
+
+Além do corpo, a ansiedade afeta profundamente a mente e as emoções.
+
+### 6. Preocupação excessiva e difícil de controlar
+
+Pensamentos do tipo "e se der errado?" que giram sem parar, sobre problemas reais ou improváveis. A pessoa sabe que está exagerando, mas não consegue "desligar" a preocupação.
+
+### 7. Irritabilidade
+
+Perder a paciência com facilidade, sentir-se no limite ou reagir de forma intensa a pequenos aborrecimentos. A irritabilidade costuma ser um sinal de ansiedade que muita gente não associa ao problema.
+
+### 8. Dificuldade de concentração
+
+A mente ansiosa está ocupada demais com preocupações para focar no presente. Isso prejudica o trabalho, os estudos e até conversas simples, gerando a sensação de "cabeça cheia" ou "névoa mental".
+
+## Sintomas comportamentais
+
+A ansiedade também muda a forma como agimos no dia a dia.
+
+### 9. Problemas de sono
+
+Dificuldade para dormir, despertares no meio da noite ou acordar já cansado. A ansiedade e o sono formam um ciclo: a preocupação atrapalha o sono, e a falta de sono aumenta a ansiedade.
+
+### 10. Evitação
+
+Deixar de fazer coisas por medo ou desconforto — evitar eventos sociais, adiar tarefas, fugir de situações que geram tensão. A evitação alivia no curto prazo, mas costuma reforçar a ansiedade a longo prazo.
+
+## Quando a ansiedade é "normal" e quando procurar ajuda
+
+Sentir ansiedade de vez em quando é **absolutamente normal** — faz parte da vida diante de provas, entrevistas, mudanças ou decisões importantes. Ela vira um problema quando:
+
+- É **frequente** e aparece mesmo sem um motivo claro;
+- É **intensa** a ponto de causar sofrimento;
+- **Atrapalha** o trabalho, os estudos, os relacionamentos ou o sono;
+- Vem acompanhada de **crises de pânico** (medo súbito e avassalador com sintomas físicos fortes);
+- Leva à **evitação** de situações importantes do dia a dia.
+
+Se você se identificou com vários sintomas desta lista e eles têm afetado sua qualidade de vida, **considere procurar um psicólogo ou médico**. Buscar ajuda não é sinal de fraqueza — é um passo de autocuidado e coragem. Transtornos de ansiedade têm tratamento eficaz, que pode incluir psicoterapia (como a terapia cognitivo-comportamental) e, quando necessário, acompanhamento médico.
+
+## O que fazer a partir de agora
+
+Enquanto busca orientação profissional, algumas atitudes ajudam a aliviar os sintomas:
+
+- **Pratique respiração lenta** (por exemplo, a técnica 4-7-8) nos momentos de pico.
+- **Movimente o corpo** todos os dias, nem que seja uma caminhada curta.
+- **Reduza cafeína e álcool**, que podem intensificar os sintomas.
+- **Cuide do sono**, mantendo horários regulares e evitando telas antes de dormir.
+- **Fale sobre o que sente** com pessoas de confiança — nomear a emoção já diminui sua intensidade.
+
+## Conclusão
+
+A ansiedade tem muitas faces: ela pode se manifestar no coração acelerado, na dor de estômago, na preocupação que não para ou nas noites mal dormidas. Reconhecer esses sinais é o que permite agir cedo, antes que eles tomem conta da sua rotina.
+
+Se este artigo fez sentido para você, saiba que **entender o que acontece com o seu corpo já é meio caminho andado**. Cuide de você, busque apoio quando necessário e lembre-se: a ansiedade pode ser tratada, e você não precisa enfrentá-la sozinho.
+
+---
+
+**Fontes para aprofundar:**
+- Organização Mundial da Saúde (OMS) — [who.int](https://www.who.int/)
+- Ministério da Saúde — [gov.br/saude](https://www.gov.br/saude/)
+- Mayo Clinic — [mayoclinic.org](https://www.mayoclinic.org/)`,
+  },
+  {
     id: '00000000-0000-0000-0000-000000000001',
     title: '10 Técnicas Científicas para Controlar a Ansiedade em 5 Minutos (Funciona!)',
     slug: '10-tecnicas-para-ansiedade',
