@@ -46,7 +46,7 @@ export default async function ProdutoPage({ params }: { params: { slug: string }
 
         <div className="flex flex-col">
           <div className="mb-3 flex items-center gap-2">
-            <span className="rounded bg-calm-100 px-2 py-1 text-xs font-medium text-calm-700">
+            <span className="rounded-full bg-gold-50 px-3 py-1 text-xs font-medium text-gold-600">
               {typeLabels[product.type] ?? product.type}
             </span>
             {isFree && (

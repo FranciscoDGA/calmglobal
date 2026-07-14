@@ -10,13 +10,16 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/70 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary-700">
-          <span className="text-2xl" aria-hidden>
+        <Link href="/" className="flex items-center gap-2.5">
+          <span
+            className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-500 text-lg text-white ring-1 ring-gold-500/40"
+            aria-hidden
+          >
             🧘
           </span>
-          {siteConfig.name}
+          <span className="font-serif text-xl font-bold text-dark-900">{siteConfig.name}</span>
         </Link>
 
         {/* Desktop */}
@@ -25,7 +28,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-gray-600 transition-colors hover:text-primary-600"
+              className="text-sm font-medium text-gray-600 transition-colors hover:text-primary-500"
             >
               {item.label}
             </Link>

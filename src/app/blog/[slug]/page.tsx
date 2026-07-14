@@ -82,7 +82,8 @@ export default async function PostPage({ params }: { params: { slug: string } })
             <img
               src={post.featured_image}
               alt={post.title}
-              className="my-6 h-72 w-full rounded-xl object-cover"
+              className="my-6 h-80 w-full rounded-xl object-cover"
+              style={{ filter: 'grayscale(25%) brightness(94%)' }}
             />
           )}
         </header>

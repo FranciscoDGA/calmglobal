@@ -9,32 +9,45 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Paleta "calma" — tons de azul/teal que transmitem tranquilidade
+        // Azul profundo — confiança e calma (cor primária)
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
+          50: '#eef4ff',
+          100: '#E0F2FE',
+          200: '#c7ddf5',
+          300: '#9bbde8',
+          400: '#5f8ed1',
+          500: '#1E3A8A',
+          600: '#1a3378',
+          700: '#152a63',
+          800: '#11224f',
+          900: '#0f1f4a',
         },
-        calm: {
-          50: '#f0fdfa',
-          100: '#ccfbf1',
-          200: '#99f6e4',
-          300: '#5eead4',
-          400: '#2dd4bf',
-          500: '#14b8a6',
-          600: '#0d9488',
-          700: '#0f766e',
+        // Ouro discreto — toque premium
+        gold: {
+          50: '#fbf6e7',
+          100: '#f6ecc7',
+          400: '#e0c05a',
+          500: '#D4AF37',
+          600: '#b8952c',
+        },
+        // Preto profundo — backgrounds escuros e headings
+        dark: {
+          800: '#1f2937',
+          900: '#111827',
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'Playfair Display', 'serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      keyframes: {
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.5s ease-out both',
       },
     },
   },

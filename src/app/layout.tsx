@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Navbar, Footer } from '@/components/ui';
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
@@ -7,6 +7,11 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { siteConfig } from '@/lib/site';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-playfair',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -60,8 +65,8 @@ const websiteSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
-      <body className="flex min-h-screen flex-col font-sans">
+    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
+      <body className="flex min-h-screen flex-col bg-[#FAFAFA] font-sans text-gray-800 antialiased">
         <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
         <Navbar />

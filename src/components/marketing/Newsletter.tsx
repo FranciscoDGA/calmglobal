@@ -30,7 +30,7 @@ export function Newsletter({
   }
 
   return (
-    <div className="rounded-2xl bg-gradient-to-br from-primary-600 to-calm-600 p-8 text-white">
+    <div className="rounded-2xl bg-gradient-to-br from-primary-700 to-dark-900 p-8 text-white ring-1 ring-gold-500/30">
       <div className="mx-auto max-w-xl text-center">
         <h3 className="text-2xl font-bold">{title}</h3>
         <p className="mt-2 text-white/90">{subtitle}</p>
