@@ -1,8 +1,12 @@
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import { samplePosts } from '@/data/samplePosts';
+import { morePosts } from '@/data/morePosts';
 import type { Language, Post } from '@/types';
 
 const DEFAULT_LANGUAGE: Language = 'pt-br';
+
+/** Todos os posts de exemplo (fallback sem Supabase). */
+const allSamplePosts: Post[] = [...samplePosts, ...morePosts];
 
 type GetPostsOptions = {
   language?: Language;
@@ -35,7 +39,7 @@ export async function getPosts(options: GetPostsOptions = {}): Promise<Post[]> {
   }
 
   // Fallback: dados de exemplo locais
-  let posts = samplePosts.filter((p) => p.language === language);
+  let posts = allSamplePosts.filter((p) => p.language === language);
   if (category) posts = posts.filter((p) => p.category === category);
   if (search) {
     const term = search.toLowerCase();
@@ -59,7 +63,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
     return data as Post;
   }
 
-  return samplePosts.find((p) => p.slug === slug) ?? null;
+  return allSamplePosts.find((p) => p.slug === slug) ?? null;
 }
 
 /** Retorna posts relacionados (mesma categoria, excluindo o atual). */

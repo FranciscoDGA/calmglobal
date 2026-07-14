@@ -64,6 +64,11 @@ export const categoryLabels: Record<string, string> = {
   'ansiedade-sono': 'Ansiedade e Sono',
   'sintomas-ansiedade': 'Sintomas de Ansiedade',
   'aplicativos-ansiedade': 'Aplicativos e Ferramentas',
+  'crise-ansiedade': 'Crise e Pânico',
+  'ansiedade-depressao': 'Ansiedade e Depressão',
+  'tratamentos-naturais': 'Tratamentos Naturais',
+  'ansiedade-criancas': 'Ansiedade em Crianças',
+  'meditacao-mindfulness': 'Meditação e Mindfulness',
 };
 
 export function categoryLabel(slug: string): string {
