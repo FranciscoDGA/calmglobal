@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button, Container } from '@/components/ui';
 import { PostList } from '@/components/blog';
+import { Newsletter } from '@/components/marketing/Newsletter';
 import { getPosts, getCategories } from '@/lib/posts';
 import { categoryLabel } from '@/lib/site';
 
@@ -34,6 +35,9 @@ export default async function HomePage() {
               Explorar o Blog
             </Button>
           </div>
+          <p className="mt-4 text-sm text-white/80">
+            📄 Guia em PDF com 10 técnicas · 100% gratuito · sem spam
+          </p>
         </Container>
       </section>
 
@@ -70,19 +74,10 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      {/* CTA final */}
+      {/* Newsletter / captura de leads */}
       <section className="bg-primary-50 py-16">
-        <Container className="text-center">
-          <h2 className="text-2xl font-bold">Comece sua jornada de calma hoje</h2>
-          <p className="mx-auto mt-3 max-w-xl text-gray-600">
-            Receba dicas semanais e nosso guia gratuito com 10 técnicas para controlar a
-            ansiedade em minutos.
-          </p>
-          <div className="mt-6">
-            <Button href="/produtos" size="lg">
-              Ver materiais gratuitos
-            </Button>
-          </div>
+        <Container>
+          <Newsletter />
         </Container>
       </section>
     </>

@@ -22,7 +22,7 @@ export function PostCard({ post }: { post: Post }) {
           <span className="rounded bg-primary-100 px-2 py-1 font-medium text-primary-800">
             {categoryLabel(post.category)}
           </span>
-          <span className="text-gray-500">{formatDate(post.published_at, 'dd MMM yyyy')}</span>
+          <span className="text-gray-500">{formatDate(post.published_at)}</span>
           <span className="text-gray-400">· {readingTime(post.content)} min</span>
         </div>
         <h3 className="mb-2 text-lg font-bold leading-snug">

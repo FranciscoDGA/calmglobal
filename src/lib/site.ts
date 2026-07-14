@@ -24,6 +24,10 @@ export const siteConfig = {
     { label: 'Sobre', href: '/sobre' },
     { label: 'Contato', href: '/contato' },
   ],
+  legal: [
+    { label: 'Política de Privacidade', href: '/privacidade' },
+    { label: 'Termos de Uso', href: '/termos' },
+  ],
   social: {
     instagram: 'https://instagram.com/calmaglobal',
     tiktok: 'https://tiktok.com/@calmaglobal',

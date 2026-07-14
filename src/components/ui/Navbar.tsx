@@ -30,6 +30,25 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <form action="/blog" method="get" className="relative">
+            <input
+              type="search"
+              name="search"
+              placeholder="Buscar..."
+              aria-label="Buscar posts"
+              className="w-40 rounded-full border border-gray-300 py-1.5 pl-4 pr-9 text-sm focus:w-52 focus:border-primary-500 focus:outline-none"
+            />
+            <button
+              type="submit"
+              aria-label="Buscar"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary-600"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="7" />
+                <path d="M21 21l-4.3-4.3" strokeLinecap="round" />
+              </svg>
+            </button>
+          </form>
           <LanguageSelector />
         </div>
 
@@ -54,6 +73,15 @@ export function Navbar() {
       {/* Mobile menu */}
       <div className={cn('border-t border-gray-100 md:hidden', open ? 'block' : 'hidden')}>
         <div className="flex flex-col gap-1 px-4 py-3">
+          <form action="/blog" method="get" className="mb-2 px-2">
+            <input
+              type="search"
+              name="search"
+              placeholder="Buscar posts..."
+              aria-label="Buscar posts"
+              className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none"
+            />
+          </form>
           {siteConfig.nav.map((item) => (
             <Link
               key={item.href}

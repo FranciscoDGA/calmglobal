@@ -49,6 +49,17 @@ export function Footer() {
               </a>
             </li>
           </ul>
+
+          <h3 className="mt-6 text-sm font-semibold text-gray-900">Legal</h3>
+          <ul className="mt-3 space-y-2">
+            {siteConfig.legal.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="text-sm text-gray-600 hover:text-primary-600">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

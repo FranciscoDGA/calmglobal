@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Button, Container } from '@/components/ui';
+import { Testimonials } from '@/components/marketing/Testimonials';
 import { getProductBySlug, getProducts } from '@/lib/products';
 import { formatPrice } from '@/lib/utils';
 
@@ -81,12 +82,21 @@ export default async function ProdutoPage({ params }: { params: { slug: string }
           </div>
 
           {!isFree && (
-            <p className="mt-3 text-sm text-gray-500">
-              O checkout (Stripe/Pix) será ativado na próxima fase do projeto.
-            </p>
+            <>
+              <div className="mt-6 flex flex-wrap gap-4 text-sm text-gray-700">
+                <span className="inline-flex items-center gap-1">🛡️ Garantia de 7 dias</span>
+                <span className="inline-flex items-center gap-1">🔒 Pagamento seguro</span>
+                <span className="inline-flex items-center gap-1">⚡ Acesso imediato</span>
+              </div>
+              <p className="mt-3 text-sm text-gray-500">
+                O checkout (Stripe/Pix) será ativado na próxima fase do projeto.
+              </p>
+            </>
           )}
         </div>
       </div>
+
+      <Testimonials />
     </Container>
   );
 }

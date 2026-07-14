@@ -3,9 +3,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Button, Container } from '@/components/ui';
+import { Container } from '@/components/ui';
+import { Breadcrumbs, ShareButtons } from '@/components/blog';
+import { Newsletter } from '@/components/marketing/Newsletter';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { getPostBySlug, getRelatedPosts, getPosts } from '@/lib/posts';
-import { categoryLabel } from '@/lib/site';
+import { categoryLabel, siteConfig } from '@/lib/site';
 import { formatDate, readingTime } from '@/lib/utils';
 
 export async function generateStaticParams() {
@@ -40,8 +43,30 @@ export default async function PostPage({ params }: { params: { slug: string } })
 
   const relatedPosts = await getRelatedPosts(post);
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.featured_image ? [post.featured_image] : undefined,
+    datePublished: post.published_at,
+    dateModified: post.updated_at,
+    author: { '@type': 'Organization', name: siteConfig.name },
+    publisher: { '@type': 'Organization', name: siteConfig.name },
+    mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`,
+  };
+
   return (
     <Container className="max-w-3xl py-12">
+      <JsonLd data={articleSchema} />
+      <Breadcrumbs
+        items={[
+          { label: 'Início', href: '/' },
+          { label: 'Blog', href: '/blog' },
+          { label: categoryLabel(post.category), href: `/blog?category=${post.category}` },
+          { label: post.title },
+        ]}
+      />
       <article>
         <header className="mb-8">
           <div className="mb-3 flex flex-wrap items-center gap-3 text-sm text-gray-600">
@@ -66,18 +91,11 @@ export default async function PostPage({ params }: { params: { slug: string } })
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
         </div>
 
-        {/* CTA e-book */}
-        <div className="mt-12 rounded-xl bg-primary-50 p-6">
-          <h3 className="text-xl font-bold">Gostou deste conteúdo?</h3>
-          <p className="mt-2 text-gray-700">
-            Baixe nosso <strong>Guia Gratuito</strong> com 10 técnicas para controlar a ansiedade
-            em minutos.
-          </p>
-          <div className="mt-4">
-            <Button href="/produtos/guia-gratis-10-tecnicas-ansiedade">
-              Baixar Guia Gratuito
-            </Button>
-          </div>
+        <ShareButtons slug={post.slug} title={post.title} />
+
+        {/* Captura de leads */}
+        <div className="mt-12">
+          <Newsletter />
         </div>
       </article>
 
