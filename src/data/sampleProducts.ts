@@ -21,7 +21,7 @@ export const sampleProducts: Product[] = [
       { question: 'O guia é realmente gratuito?', answer: 'Sim, 100% gratuito. Basta informar seu e-mail para receber o link de download.' },
       { question: 'Em que formato recebo?', answer: 'Um arquivo PDF que você pode ler no celular, computador ou imprimir.' },
     ],
-    download_url: null,
+    download_url: '/ebook/kit-anti-ansiedade.pdf',
     image_url:
       'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
     image_alt: 'Capa do guia gratuito com 10 técnicas para controlar a ansiedade',
