@@ -11,7 +11,7 @@ export function PostCard({ post }: { post: Post }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={post.featured_image}
-            alt={post.title}
+            alt={post.image_alt ?? post.title}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             style={{ filter: 'grayscale(30%) brightness(92%)' }}
           />

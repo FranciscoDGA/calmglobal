@@ -18,7 +18,7 @@ export function ProductCard({ product }: { product: Product }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={product.image_url}
-            alt={product.title}
+            alt={product.image_alt ?? product.title}
             className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
             style={{ filter: 'grayscale(15%) brightness(95%)' }}
           />

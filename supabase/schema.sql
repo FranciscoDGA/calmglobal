@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS posts (
   excerpt TEXT,
   category TEXT NOT NULL,              -- ex: 'tecnicas-para-ansiedade'
   featured_image TEXT,                 -- URL (Supabase Storage / Unsplash)
+  image_alt TEXT,                      -- texto alternativo descritivo (SEO)
   language TEXT NOT NULL DEFAULT 'pt-br', -- 'pt-br' | 'en' | 'es' (i18n)
   translated_from UUID REFERENCES posts(id), -- post original (traduções)
   published_at TIMESTAMPTZ DEFAULT NOW(),
@@ -33,9 +34,13 @@ CREATE TABLE IF NOT EXISTS products (
   slug TEXT UNIQUE NOT NULL,
   description TEXT NOT NULL,
   price DECIMAL(10, 2) NOT NULL DEFAULT 0,
+  old_price DECIMAL(10, 2),            -- preço "de" (apenas promoções reais)
   type TEXT NOT NULL,                  -- 'ebook' | 'curso' | 'template'
+  benefits JSONB,                      -- array de benefícios (string[])
+  faq JSONB,                           -- array de { question, answer }
   download_url TEXT,
   image_url TEXT,
+  image_alt TEXT,                      -- texto alternativo descritivo (SEO)
   is_active BOOLEAN DEFAULT TRUE,
   created_at TIMESTAMPTZ DEFAULT NOW()
 );

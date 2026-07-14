@@ -8,10 +8,14 @@ export type Post = {
   excerpt: string;
   category: string;
   featured_image: string | null;
+  /** Texto alternativo descritivo da imagem (SEO/acessibilidade). */
+  image_alt?: string | null;
   language: Language;
   published_at: string;
   updated_at: string;
 };
+
+export type FaqItem = { question: string; answer: string };
 
 export type Product = {
   id: string;
@@ -19,9 +23,16 @@ export type Product = {
   slug: string;
   description: string;
   price: number;
+  /** Preço "de" — use APENAS em promoções reais (nunca âncora fictícia). */
+  old_price?: number | null;
   type: 'ebook' | 'curso' | 'template';
+  /** Lista de benefícios do produto (bullet points de conversão). */
+  benefits?: string[];
+  /** Perguntas frequentes específicas do produto. */
+  faq?: FaqItem[];
   download_url: string | null;
   image_url: string | null;
+  image_alt?: string | null;
   is_active: boolean;
   created_at: string;
 };

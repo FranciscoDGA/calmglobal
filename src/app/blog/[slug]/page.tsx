@@ -81,7 +81,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={post.featured_image}
-              alt={post.title}
+              alt={post.image_alt ?? post.title}
               className="my-6 h-80 w-full rounded-xl object-cover"
               style={{ filter: 'grayscale(25%) brightness(94%)' }}
             />
