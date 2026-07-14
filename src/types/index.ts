@@ -10,6 +10,8 @@ export type Post = {
   featured_image: string | null;
   /** Texto alternativo descritivo da imagem (SEO/acessibilidade). */
   image_alt?: string | null;
+  /** Perguntas frequentes do artigo (gera FAQPage schema — "People Also Ask"). */
+  faq?: FaqItem[];
   language: Language;
   published_at: string;
   updated_at: string;

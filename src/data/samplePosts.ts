@@ -21,6 +21,28 @@ export const samplePosts: Post[] = [
       'Meditação, respiração, sono e terapia no seu bolso. Conheça 5 dos melhores aplicativos para ansiedade em 2026 e descubra qual combina com você.',
     published_at: '2026-07-17T09:00:00Z',
     updated_at: '2026-07-17T09:00:00Z',
+    faq: [
+      {
+        question: 'Aplicativos para ansiedade funcionam mesmo?',
+        answer:
+          'Podem ajudar bastante como apoio, criando o hábito de meditar, respirar e dormir melhor. Não substituem tratamento profissional, mas somam ao autocuidado.',
+      },
+      {
+        question: 'Existe aplicativo gratuito para ansiedade?',
+        answer:
+          'Sim. A maioria dos apps oferece uma versão gratuita ou período de teste. Apps de respiração guiada, em especial, costumam ter recursos gratuitos.',
+      },
+      {
+        question: 'Um app substitui a terapia?',
+        answer:
+          'Não. Aplicativos são ferramentas de apoio. Em casos de ansiedade intensa ou frequente, o acompanhamento com psicólogo ou médico é indispensável.',
+      },
+      {
+        question: 'Qual o melhor aplicativo para dormir?',
+        answer:
+          'Apps com histórias e sons para dormir (como o Calm) tendem a ajudar quem tem insônia. Combine com boas práticas de higiene do sono.',
+      },
+    ],
     content: `**E se parte do alívio para a sua ansiedade estivesse a um toque de distância, no seu próprio celular?** Nos últimos anos, os aplicativos de saúde mental deixaram de ser novidade e viraram ferramentas de apoio reais — com meditações guiadas, exercícios de respiração, sons para dormir e até programas baseados em terapia.
 
 Neste guia, você vai conhecer **5 dos melhores aplicativos para ansiedade em 2026**, o que cada um faz de melhor e como escolher o ideal para o seu momento. A ideia não é substituir tratamento profissional, mas somar uma ajuda prática ao seu dia a dia.
@@ -132,6 +154,28 @@ com a devida marcação rel="nofollow sponsored" e um aviso de parceria.]
       'Por que a ansiedade parece piorar à noite? Entenda o que acontece na hora de dormir e veja um passo a passo prático para acalmar a mente e dormir melhor.',
     published_at: '2026-07-16T09:00:00Z',
     updated_at: '2026-07-16T09:00:00Z',
+    faq: [
+      {
+        question: 'Por que a ansiedade piora à noite?',
+        answer:
+          'À noite, o silêncio tira as distrações do dia e o cérebro cansado tem menos recursos para regular emoções, o que faz os pensamentos ansiosos aparecerem com mais força.',
+      },
+      {
+        question: 'O que fazer quando não consigo dormir por causa da ansiedade?',
+        answer:
+          'Pratique a respiração 4-7-8, anote as preocupações em um papel e, se não dormir em cerca de 20 minutos, levante e faça algo tranquilo com luz baixa até sentir sono.',
+      },
+      {
+        question: 'Cortar cafeína ajuda na ansiedade noturna?',
+        answer:
+          'Sim. Evitar cafeína após as 15h reduz o estado de alerta à noite e favorece um sono mais tranquilo.',
+      },
+      {
+        question: 'Quando devo procurar ajuda para insônia?',
+        answer:
+          'Se a insônia e a ansiedade forem frequentes, durarem semanas e afetarem seu dia a dia, procure um profissional. A TCC para insônia é bastante eficaz.',
+      },
+    ],
     content: `**Você deita para dormir, apaga a luz e, de repente, a mente liga.** Preocupações, pensamentos acelerados, aquela sensação de aperto no peito. Se a sua ansiedade parece piorar justamente à noite, saiba que isso tem explicação — e, principalmente, solução.
 
 Neste artigo, você vai entender por que a ansiedade noturna acontece, como ela afeta o sono e, o mais importante, um passo a passo prático para acalmar a mente e voltar a dormir bem.
@@ -237,6 +281,28 @@ Comece hoje escolhendo **um** passo desta lista. Seu sono, seu corpo e sua mente
       'A ansiedade nem sempre é óbvia. Conheça 10 sintomas físicos, emocionais e comportamentais que muita gente tem sem perceber — e quando é hora de buscar ajuda.',
     published_at: '2026-07-15T09:00:00Z',
     updated_at: '2026-07-15T09:00:00Z',
+    faq: [
+      {
+        question: 'Quais são os primeiros sintomas de ansiedade?',
+        answer:
+          'Costumam surgir sinais físicos (coração acelerado, tensão muscular, desconforto no estômago) e mentais (preocupação excessiva, irritabilidade, dificuldade de concentração).',
+      },
+      {
+        question: 'A ansiedade pode causar sintomas físicos?',
+        answer:
+          'Sim. A ansiedade libera hormônios como adrenalina e cortisol, que provocam taquicardia, falta de ar, tensão muscular e problemas digestivos, entre outros.',
+      },
+      {
+        question: 'Como saber se é ansiedade ou um problema no coração?',
+        answer:
+          'Só um profissional pode diferenciar com segurança. Diante de dor no peito, falta de ar intensa ou sintomas persistentes, procure avaliação médica para descartar causas físicas.',
+      },
+      {
+        question: 'Quando devo procurar ajuda profissional?',
+        answer:
+          'Quando os sintomas são frequentes, intensos e atrapalham seu trabalho, sono ou relacionamentos. Buscar ajuda cedo facilita o tratamento.',
+      },
+    ],
     content: `**Coração acelerado, dor no estômago, dificuldade para dormir, irritação sem motivo aparente.** Muita gente convive com sinais como esses todos os dias sem imaginar que têm uma origem comum: a ansiedade. Ela nem sempre aparece como uma "crise" evidente — muitas vezes se disfarça em sintomas físicos e comportamentais que parecem não ter relação entre si.
 
 Neste artigo, você vai conhecer **10 sintomas de ansiedade** que passam despercebidos, entender por que eles acontecem e descobrir quando é hora de procurar ajuda profissional. Reconhecer os sinais é o primeiro passo para cuidar de você.
@@ -351,6 +417,28 @@ Se este artigo fez sentido para você, saiba que **entender o que acontece com o
       'Descubra 10 técnicas apoiadas pela ciência para reduzir a ansiedade em minutos — passo a passo, com exemplos práticos para usar hoje mesmo.',
     published_at: '2026-07-14T09:00:00Z',
     updated_at: '2026-07-14T09:00:00Z',
+    faq: [
+      {
+        question: 'Quanto tempo demora para ver resultados?',
+        answer:
+          'Muitas pessoas sentem alívio imediato com técnicas como a respiração 4-7-8. Para resultados mais duradouros, o ideal é praticar diariamente por algumas semanas.',
+      },
+      {
+        question: 'Preciso de equipamentos ou experiência prévia?',
+        answer:
+          'Não. Todas as técnicas deste guia podem ser feitas em qualquer lugar, sem equipamentos, custo ou conhecimento prévio.',
+      },
+      {
+        question: 'Essas técnicas substituem a terapia?',
+        answer:
+          'Não. Elas são complementares e funcionam bem junto ao acompanhamento profissional. Em casos mais intensos, procure um psicólogo ou médico.',
+      },
+      {
+        question: 'Qual a melhor técnica para uma crise de ansiedade?',
+        answer:
+          'A respiração 4-7-8 costuma ser a mais eficaz no momento da crise, especialmente combinada com mudar de ambiente e ouvir uma música relaxante.',
+      },
+    ],
     content: `**Você já sentiu o coração disparar sem motivo aparente, a respiração ficar curta e a mente ser tomada por pensamentos que não param?** Se sim, você não está sozinho. A ansiedade se tornou uma das queixas de saúde mental mais comuns do mundo — e a vida digital, com notificações constantes, comparação nas redes sociais e excesso de informação, só acelerou esse processo.
 
 A boa notícia é que existem técnicas simples, rápidas e apoiadas pela ciência que podem te ajudar a recuperar o controle **em poucos minutos**. Neste guia completo, você vai conhecer 10 delas — com o passo a passo, por que funcionam e como aplicá-las na sua rotina. Nenhuma exige equipamento, dinheiro ou experiência prévia.
@@ -445,6 +533,8 @@ O que você consome afeta diretamente seu nível de ansiedade.
 
 **Exemplo prático:** evite cafeína após as 15h para não prejudicar o sono.
 
+> 📥 **Quer as 10 técnicas em PDF para consultar quando quiser?** Baixe gratuitamente o [Kit Anti-Ansiedade](/produtos/guia-gratis-10-tecnicas-ansiedade) — inclui checklist diário e um exercício prático para cada técnica.
+
 ### 6. Sono de qualidade (a base de tudo)
 
 Dormir mal e ansiedade formam um ciclo vicioso: [a ansiedade atrapalha o sono](/blog/ansiedade-noturna), e a falta de sono aumenta a ansiedade.
@@ -522,6 +612,12 @@ A ansiedade não é uma sentença — é um sinal do corpo que pode ser compreen
 
 Comece hoje escolhendo **uma** técnica desta lista e pratique-a por sete dias. Seu sistema nervoso agradece.
 
+### 🚀 Próximos passos
+
+1. **Escolha 1 técnica** desta lista e pratique por 7 dias seguidos.
+2. **Baixe o [Kit Anti-Ansiedade gratuito](/produtos/guia-gratis-10-tecnicas-ansiedade)** para ter todas as técnicas em PDF + checklist diário.
+3. **Compartilhe** este artigo com alguém que precisa ler isto hoje.
+
 ---
 
 **Fontes para aprofundar:**
@@ -542,6 +638,23 @@ Comece hoje escolhendo **uma** técnica desta lista e pratique-a por sete dias. 
       'A comparação constante e o FOMO das redes sociais alimentam a ansiedade. Entenda o mecanismo por trás disso e veja um plano prático para se proteger.',
     published_at: '2026-07-12T09:00:00Z',
     updated_at: '2026-07-12T09:00:00Z',
+    faq: [
+      {
+        question: 'As redes sociais realmente causam ansiedade?',
+        answer:
+          'Elas não são a única causa, mas o uso excessivo alimenta comparação, FOMO e sobrecarga de informação, fatores fortemente associados ao aumento da ansiedade.',
+      },
+      {
+        question: 'Como saber se as redes sociais estão me afetando?',
+        answer:
+          'Sinais comuns são ansiedade ao ficar sem o celular, checagem compulsiva, comparação frequente e sensação de vazio ou tristeza após o uso.',
+      },
+      {
+        question: 'Preciso deletar minhas redes sociais?',
+        answer:
+          'Não necessariamente. Na maioria dos casos, basta estabelecer limites conscientes: horários fixos, menos notificações e um dia por semana de detox.',
+      },
+    ],
     content: `**Você abre o Instagram "só por um minuto" e, quando percebe, já se passou meia hora — e você se sente pior do que antes.** Se isso soa familiar, saiba que não é falta de força de vontade. As redes sociais foram cuidadosamente projetadas para capturar e prender sua atenção, e esse design tem um preço para a saúde mental.
 
 Neste artigo, você vai entender por que as redes alimentam a ansiedade, reconhecer os sinais de alerta e, principalmente, encontrar um plano prático para usar essas ferramentas sem que elas usem você.
@@ -644,6 +757,23 @@ Comece pequeno. Escolha **uma** etapa deste plano e pratique-a por uma semana. A
       'A ascensão da inteligência artificial trouxe uma nova forma de ansiedade. Entenda por que ela surge e veja como transformar o medo em adaptação.',
     published_at: '2026-07-10T09:00:00Z',
     updated_at: '2026-07-10T09:00:00Z',
+    faq: [
+      {
+        question: 'A inteligência artificial vai substituir o meu emprego?',
+        answer:
+          'Na maioria dos casos, a IA automatiza tarefas, não profissões inteiras. Quem aprende a usá-la como ferramenta tende a se tornar mais valioso, não menos.',
+      },
+      {
+        question: 'Como me preparar para a IA no trabalho?',
+        answer:
+          'Mapeie suas tarefas repetitivas, aprenda a usar as ferramentas de IA da sua área e invista em habilidades humanas como criatividade, empatia e pensamento crítico.',
+      },
+      {
+        question: 'Por que a IA causa tanta ansiedade?',
+        answer:
+          'Principalmente pela incerteza sobre o futuro, pela velocidade das mudanças e pelas notícias alarmistas. Focar no que está sob seu controle ajuda a reduzir esse medo.',
+      },
+    ],
     content: `**"Será que a inteligência artificial vai substituir o meu trabalho?"** Essa pergunta tira o sono de milhões de profissionais — e não é para menos. A cada nova ferramenta de IA que viraliza, cresce também uma forma específica de ansiedade: o medo de se tornar obsoleto.
 
 Esse medo é real e legítimo. Mas, como toda ansiedade, ele pode ser compreendido e canalizado de forma produtiva. Neste artigo, você vai entender por que a IA gera tanta angústia e, mais importante, sair com um plano concreto para transformar essa preocupação em vantagem.

@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { Container } from '@/components/ui';
 import { Breadcrumbs, ShareButtons } from '@/components/blog';
 import { Newsletter } from '@/components/marketing/Newsletter';
+import { Faq } from '@/components/marketing/Faq';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getPostBySlug, getRelatedPosts, getPosts } from '@/lib/posts';
 import { categoryLabel, siteConfig } from '@/lib/site';
@@ -93,6 +94,9 @@ export default async function PostPage({ params }: { params: { slug: string } })
         </div>
 
         <ShareButtons slug={post.slug} title={post.title} />
+
+        {/* FAQ (com FAQPage schema) */}
+        {post.faq && post.faq.length > 0 && <Faq items={post.faq} />}
 
         {/* Captura de leads */}
         <div className="mt-12">
