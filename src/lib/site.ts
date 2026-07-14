@@ -1,5 +1,11 @@
 import type { Language } from '@/types';
 
+export type NavItem = {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+};
+
 /** Configuração central do site — usada em SEO, layout, navegação. */
 export const siteConfig = {
   name: 'Calma Global',
@@ -21,10 +27,16 @@ export const siteConfig = {
     { label: 'Início', href: '/' },
     { label: 'Blog', href: '/blog' },
     { label: 'Produtos', href: '/produtos' },
-    { label: 'Atendimento', href: '/atendimento' },
-    { label: 'Sobre', href: '/sobre' },
+    {
+      label: 'Sobre',
+      href: '/sobre',
+      children: [
+        { label: 'Sobre mim', href: '/sobre' },
+        { label: 'Atendimento', href: '/atendimento' },
+      ],
+    },
     { label: 'Contato', href: '/contato' },
-  ],
+  ] as NavItem[],
   legal: [
     { label: 'Política de Privacidade', href: '/privacidade' },
     { label: 'Termos de Uso', href: '/termos' },

@@ -23,7 +23,7 @@ export function AuthorBio() {
             href="/atendimento"
             className="inline-flex items-center gap-2 rounded-lg bg-primary-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-600"
           >
-            Agende uma conversa gratuita →
+            Conheça o atendimento →
           </Link>
         </div>
       </div>

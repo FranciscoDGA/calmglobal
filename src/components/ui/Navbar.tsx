@@ -24,15 +24,51 @@ export function Navbar() {
 
         {/* Desktop */}
         <div className="hidden items-center gap-6 md:flex">
-          {siteConfig.nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-gray-600 transition-colors hover:text-primary-500"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {siteConfig.nav.map((item) =>
+            item.children ? (
+              <div key={item.href} className="group relative">
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-1 text-sm font-medium text-gray-600 transition-colors hover:text-primary-500"
+                >
+                  {item.label}
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="transition-transform group-hover:rotate-180"
+                    aria-hidden
+                  >
+                    <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+                <div className="invisible absolute left-0 top-full z-50 pt-3 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                  <div className="min-w-[190px] overflow-hidden rounded-lg border border-gray-100 bg-white py-1 shadow-lg">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-4 py-2.5 text-sm text-gray-600 transition-colors hover:bg-primary-50 hover:text-primary-500"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-gray-600 transition-colors hover:text-primary-500"
+              >
+                {item.label}
+              </Link>
+            ),
+          )}
           <form action="/blog" method="get" className="relative">
             <input
               type="search"
@@ -86,14 +122,29 @@ export function Navbar() {
             />
           </form>
           {siteConfig.nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-primary-50 hover:text-primary-600"
-            >
-              {item.label}
-            </Link>
+            <div key={item.href}>
+              <Link
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="block rounded-md px-2 py-2 text-sm font-medium text-gray-600 hover:bg-primary-50 hover:text-primary-600"
+              >
+                {item.label}
+              </Link>
+              {item.children && (
+                <div className="ml-3 border-l border-gray-100 pl-3">
+                  {item.children.map((child) => (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      onClick={() => setOpen(false)}
+                      className="block rounded-md px-2 py-2 text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600"
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
           <div className="px-2 py-2">
             <LanguageSelector />

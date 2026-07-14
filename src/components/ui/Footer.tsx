@@ -17,16 +17,18 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-gray-900">Navegação</h3>
           <ul className="mt-3 space-y-2">
-            {siteConfig.nav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-sm text-gray-600 hover:text-primary-600"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            {siteConfig.nav
+              .flatMap((item) => item.children ?? [item])
+              .map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-gray-600 hover:text-primary-600"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
 

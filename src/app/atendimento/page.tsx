@@ -91,7 +91,11 @@ export default function AtendimentoPage() {
           limitadas — deixe sua mensagem e eu retorno para combinarmos o melhor horário.
         </p>
         <div className="mt-6">
-          <Button href="/contato" variant="secondary" size="lg">
+          <Button
+            href="/contato?assunto=Quero%20agendar%20uma%20conversa%20de%20triagem%20gratuita"
+            variant="secondary"
+            size="lg"
+          >
             Agendar conversa gratuita
           </Button>
         </div>
