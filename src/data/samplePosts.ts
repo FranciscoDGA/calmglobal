@@ -9,6 +9,222 @@ import type { Post } from '@/types';
  */
 export const samplePosts: Post[] = [
   {
+    id: '00000000-0000-0000-0000-000000000006',
+    title: 'Os 5 Melhores Aplicativos para Ansiedade em 2026 (Guia Completo)',
+    slug: 'aplicativos-para-ansiedade',
+    category: 'aplicativos-ansiedade',
+    language: 'pt-br',
+    featured_image:
+      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80',
+    image_alt: 'Mão segurando um smartphone com aplicativos de meditação e bem-estar na tela',
+    excerpt:
+      'Meditação, respiração, sono e terapia no seu bolso. Conheça 5 dos melhores aplicativos para ansiedade em 2026 e descubra qual combina com você.',
+    published_at: '2026-07-17T09:00:00Z',
+    updated_at: '2026-07-17T09:00:00Z',
+    content: `**E se parte do alívio para a sua ansiedade estivesse a um toque de distância, no seu próprio celular?** Nos últimos anos, os aplicativos de saúde mental deixaram de ser novidade e viraram ferramentas de apoio reais — com meditações guiadas, exercícios de respiração, sons para dormir e até programas baseados em terapia.
+
+Neste guia, você vai conhecer **5 dos melhores aplicativos para ansiedade em 2026**, o que cada um faz de melhor e como escolher o ideal para o seu momento. A ideia não é substituir tratamento profissional, mas somar uma ajuda prática ao seu dia a dia.
+
+> 📚 **Leia também:** [10 Técnicas Científicas para Controlar a Ansiedade](/blog/10-tecnicas-para-ansiedade) e, se você sofre à noite, [Ansiedade Noturna: como dormir melhor](/blog/ansiedade-noturna).
+
+> ⚠️ Aplicativos são um apoio, não um substituto de tratamento. Se a ansiedade for intensa ou frequente, procure um psicólogo ou médico.
+
+## Como um aplicativo pode ajudar (e o que ele não faz)
+
+Os melhores apps de saúde mental funcionam como um "personal trainer" da sua mente: eles oferecem estrutura, lembretes e exercícios guiados que facilitam a criação de hábitos como meditar, respirar com consciência e dormir melhor.
+
+**O que um bom app pode fazer:**
+- Ensinar técnicas de respiração e meditação passo a passo
+- Ajudar a criar uma rotina de autocuidado
+- Oferecer sons e histórias para melhorar o sono
+- Registrar seu humor e mostrar padrões ao longo do tempo
+
+**O que um app não faz:**
+- Diagnosticar transtornos
+- Substituir a psicoterapia ou o acompanhamento médico
+- Resolver crises graves (nesses casos, busque ajuda profissional imediata)
+
+Com essa expectativa clara, vamos aos aplicativos.
+
+## 1. Melhor para meditação: Calm
+
+O **Calm** é um dos aplicativos de meditação mais conhecidos do mundo. Ele se destaca pela biblioteca ampla de meditações guiadas, histórias para dormir (as famosas *Sleep Stories*), músicas relaxantes e programas para reduzir o estresse.
+
+- **Ideal para:** quem quer começar a meditar e melhorar o sono.
+- **Pontos fortes:** interface calma e agradável, muito conteúdo de qualidade.
+- **Atenção:** boa parte do conteúdo exige assinatura.
+
+## 2. Melhor para iniciantes: Headspace
+
+O **Headspace** ficou famoso por tornar a meditação simples e didática, com uma linguagem leve e animações que explicam os conceitos. Oferece trilhas para ansiedade, foco, sono e até exercícios de movimento.
+
+- **Ideal para:** quem nunca meditou e quer um passo a passo amigável.
+- **Pontos fortes:** didática excelente, cursos organizados por tema.
+- **Atenção:** funciona por assinatura, com período de teste gratuito.
+
+## 3. Melhor em português: Medite.se e alternativas nacionais
+
+Para quem prefere conteúdo em **português do Brasil**, vale explorar apps nacionais de meditação e bem-estar, como o **Medite.se** e outras opções brasileiras. Eles trazem meditações guiadas em português, o que faz muita diferença na hora de relaxar de verdade.
+
+- **Ideal para:** quem se conecta melhor com conteúdo no próprio idioma.
+- **Pontos fortes:** meditações em português, temas voltados à realidade local.
+- **Atenção:** confira os planos gratuitos e pagos de cada opção.
+
+## 4. Melhor para respiração e crises: apps de respiração guiada
+
+Nos momentos de pico de ansiedade, aplicativos focados em **respiração guiada** ajudam a acalmar o corpo rapidamente. Eles mostram visualmente o ritmo (inspirar, segurar, expirar) e facilitam técnicas como a respiração 4-7-8.
+
+- **Ideal para:** aliviar sintomas físicos no momento em que surgem.
+- **Pontos fortes:** simples, rápidos e muitos têm versão gratuita.
+- **Atenção:** são um apoio pontual, não um programa completo.
+
+## 5. Melhor para acompanhar o humor: apps de mood tracking
+
+Registrar como você se sente ao longo dos dias ajuda a identificar gatilhos e padrões. Aplicativos de **diário de humor** (mood tracking) permitem anotar emoções, hábitos e pensamentos, gerando gráficos que trazem autoconhecimento — algo muito útil, inclusive, para levar à terapia.
+
+- **Ideal para:** quem quer entender melhor os próprios padrões emocionais.
+- **Pontos fortes:** autoconhecimento e registro ao longo do tempo.
+- **Atenção:** o benefício vem da constância no registro.
+
+## Como escolher o aplicativo ideal para você
+
+Não existe "o melhor app" universal — existe o melhor para o **seu objetivo**. Use este guia rápido:
+
+- Quer **aprender a meditar**? Comece pelo Headspace ou Calm.
+- Prefere **conteúdo em português**? Teste apps nacionais como o Medite.se.
+- Precisa de **alívio rápido em crises**? Um app de respiração guiada.
+- Quer **se conhecer melhor**? Um app de registro de humor.
+- Luta contra a [**insônia** e a ansiedade noturna](/blog/ansiedade-noturna)? Priorize apps com histórias e sons para dormir.
+
+**Dicas finais:**
+1. Aproveite os **períodos de teste gratuito** antes de assinar.
+2. Escolha **um** app e use com constância — pular de um para outro atrapalha.
+3. Reserve um horário fixo para usar (por exemplo, antes de dormir).
+
+## Conclusão
+
+Os aplicativos de saúde mental são aliados poderosos para quem convive com ansiedade — acessíveis, práticos e disponíveis a qualquer hora. Usados com constância, eles ajudam a construir hábitos que acalmam o corpo e a mente.
+
+Lembre-se, porém, de que nenhum app substitui o cuidado humano. Se a ansiedade estiver pesando, combine essas ferramentas com o apoio de um profissional. A tecnologia pode ser sua aliada — desde que trabalhe a seu favor.
+
+---
+
+<!--
+[Francisco: antes de publicar, confira as funcionalidades e preços ATUAIS de
+cada app e, se for usar links de afiliado (Calm, Headspace, etc.), insira-os
+com a devida marcação rel="nofollow sponsored" e um aviso de parceria.]
+-->
+
+**Fontes para aprofundar:**
+- Organização Mundial da Saúde (OMS) — [who.int](https://www.who.int/)
+- Sites oficiais de cada aplicativo`,
+  },
+  {
+    id: '00000000-0000-0000-0000-000000000005',
+    title: 'Ansiedade Noturna: Por que Acontece e Como Dormir Melhor',
+    slug: 'ansiedade-noturna',
+    category: 'ansiedade-sono',
+    language: 'pt-br',
+    featured_image:
+      'https://images.unsplash.com/photo-1455642305367-68834a1da7ab?w=1200&q=80',
+    image_alt: 'Quarto escuro com pessoa deitada acordada na cama durante a noite',
+    excerpt:
+      'Por que a ansiedade parece piorar à noite? Entenda o que acontece na hora de dormir e veja um passo a passo prático para acalmar a mente e dormir melhor.',
+    published_at: '2026-07-16T09:00:00Z',
+    updated_at: '2026-07-16T09:00:00Z',
+    content: `**Você deita para dormir, apaga a luz e, de repente, a mente liga.** Preocupações, pensamentos acelerados, aquela sensação de aperto no peito. Se a sua ansiedade parece piorar justamente à noite, saiba que isso tem explicação — e, principalmente, solução.
+
+Neste artigo, você vai entender por que a ansiedade noturna acontece, como ela afeta o sono e, o mais importante, um passo a passo prático para acalmar a mente e voltar a dormir bem.
+
+> 📚 **Leia também:** [10 Técnicas para Controlar a Ansiedade](/blog/10-tecnicas-para-ansiedade) e [Os melhores aplicativos para ansiedade e sono](/blog/aplicativos-para-ansiedade).
+
+> ⚠️ Conteúdo informativo. Se a insônia ou a ansiedade forem persistentes, procure um médico ou psicólogo.
+
+## O que é ansiedade noturna
+
+Ansiedade noturna é o aumento dos sintomas de ansiedade — preocupação, tensão, coração acelerado, pensamentos em looping — no período da noite, especialmente na hora de dormir. Para muita gente, é o momento em que a mente "não desliga".
+
+Ela pode dificultar o adormecer, causar despertares no meio da noite ou fazer a pessoa acordar já cansada, mesmo depois de horas na cama.
+
+## Por que a ansiedade piora à noite?
+
+Não é impressão sua: existem razões concretas para a ansiedade se intensificar quando o dia termina.
+
+### 1. Silêncio e ausência de distrações
+
+Durante o dia, o trabalho, as tarefas e as telas ocupam a mente. À noite, com tudo em silêncio, não há mais para onde "fugir" — e os pensamentos que estavam represados finalmente aparecem.
+
+### 2. Cansaço reduz o autocontrole
+
+Ao fim do dia, o cérebro está mais cansado e com menos recursos para regular emoções. Isso torna mais difícil colocar os pensamentos ansiosos em perspectiva.
+
+### 3. O ciclo ansiedade–insônia
+
+A ansiedade atrapalha o sono, e a falta de sono aumenta a ansiedade no dia seguinte. Esse ciclo se retroalimenta e, com o tempo, cria o medo de não conseguir dormir — que, por si só, gera mais ansiedade.
+
+### 4. Estímulos e telas antes de dormir
+
+A luz azul das telas inibe a melatonina (o hormônio do sono), enquanto notícias, redes sociais e mensagens mantêm o cérebro em estado de alerta pouco antes de deitar.
+
+### 5. Cafeína e outros gatilhos
+
+Café, energéticos e até alguns chás consumidos à tarde ou à noite podem prolongar o estado de alerta e dificultar o relaxamento.
+
+## Como acalmar a mente e dormir melhor: passo a passo
+
+A boa notícia é que a ansiedade noturna responde muito bem a mudanças de rotina. Veja um plano prático.
+
+### 1. Crie um "ritual de desaceleração"
+
+Nas 1 a 2 horas antes de dormir, reduza o ritmo: luzes mais baixas, atividades tranquilas, nada de trabalho ou discussões. Sinalize ao corpo que o dia está terminando.
+
+### 2. Desligue as telas antes de deitar
+
+Evite celular, TV e computador pelo menos 1 hora antes de dormir. Se precisar usar, ative o modo noturno e reduza o brilho. Melhor ainda: deixe o celular longe da cama.
+
+### 3. Pratique a respiração 4-7-8
+
+Deitado, inspire pelo nariz contando até 4, segure por 7 e expire pela boca em 8. Repita algumas vezes. Essa técnica ativa o sistema nervoso parassimpático e ajuda o corpo a relaxar.
+
+### 4. Faça um "descarrego mental" no papel
+
+Se a mente está cheia de preocupações, escreva-as em um caderno ao lado da cama. Anotar o que precisa ser feito amanhã tira o peso de "ter que lembrar" e acalma o pensamento em looping.
+
+### 5. Use a regra dos 20 minutos
+
+Se não conseguir dormir em cerca de 20 minutos, levante, vá para outro ambiente com luz baixa e faça algo relaxante (ler, respirar) até sentir sono. Ficar rolando na cama só associa o leito à frustração.
+
+### 6. Cuide da higiene do sono
+
+- Durma e acorde em horários regulares, inclusive nos fins de semana.
+- Mantenha o quarto escuro, silencioso e fresco (18–22 °C).
+- Evite cafeína após as 15h e refeições pesadas à noite.
+- Reserve a cama para dormir — não para trabalhar ou ver o celular.
+
+### 7. Acolha os pensamentos, sem brigar com eles
+
+Tentar "parar de pensar" costuma piorar. Em vez disso, observe os pensamentos com gentileza, reconheça-os ("estou ansioso agora") e volte a atenção para a respiração ou para as sensações do corpo.
+
+## Quando procurar ajuda
+
+Se a ansiedade noturna e a insônia se tornam frequentes, duram semanas e afetam seu dia a dia, é hora de buscar apoio profissional. A terapia cognitivo-comportamental para insônia (TCC-I) é uma das abordagens mais eficazes, e um médico pode avaliar se há outros fatores envolvidos.
+
+Procurar ajuda não é exagero — é cuidar de algo essencial para a sua saúde física e mental.
+
+## Conclusão
+
+A ansiedade noturna acontece porque a noite tira as distrações e nos deixa a sós com a mente cansada. Mas, com pequenas mudanças na rotina — um ritual de desaceleração, menos telas, respiração consciente e boa higiene do sono — é totalmente possível quebrar o ciclo e recuperar noites tranquilas.
+
+Comece hoje escolhendo **um** passo desta lista. Seu sono, seu corpo e sua mente vão agradecer.
+
+---
+
+**Fontes para aprofundar:**
+- Organização Mundial da Saúde (OMS) — [who.int](https://www.who.int/)
+- Sleep Foundation — [sleepfoundation.org](https://www.sleepfoundation.org/)
+- Harvard Health Publishing — [health.harvard.edu](https://www.health.harvard.edu/)`,
+  },
+  {
     id: '00000000-0000-0000-0000-000000000004',
     title: '10 Sintomas de Ansiedade que Você Pode Ter (e Não Sabe)',
     slug: 'sintomas-de-ansiedade',
@@ -24,6 +240,8 @@ export const samplePosts: Post[] = [
     content: `**Coração acelerado, dor no estômago, dificuldade para dormir, irritação sem motivo aparente.** Muita gente convive com sinais como esses todos os dias sem imaginar que têm uma origem comum: a ansiedade. Ela nem sempre aparece como uma "crise" evidente — muitas vezes se disfarça em sintomas físicos e comportamentais que parecem não ter relação entre si.
 
 Neste artigo, você vai conhecer **10 sintomas de ansiedade** que passam despercebidos, entender por que eles acontecem e descobrir quando é hora de procurar ajuda profissional. Reconhecer os sinais é o primeiro passo para cuidar de você.
+
+> 📚 **Leia também:** já reconheceu os sintomas? Veja [10 Técnicas para Controlar a Ansiedade](/blog/10-tecnicas-para-ansiedade) e, se o problema é à noite, [Ansiedade Noturna](/blog/ansiedade-noturna).
 
 > ⚠️ Este conteúdo é informativo e não substitui uma avaliação profissional. Apenas um médico ou psicólogo pode fazer um diagnóstico.
 
@@ -137,6 +355,8 @@ Se este artigo fez sentido para você, saiba que **entender o que acontece com o
 
 A boa notícia é que existem técnicas simples, rápidas e apoiadas pela ciência que podem te ajudar a recuperar o controle **em poucos minutos**. Neste guia completo, você vai conhecer 10 delas — com o passo a passo, por que funcionam e como aplicá-las na sua rotina. Nenhuma exige equipamento, dinheiro ou experiência prévia.
 
+> 📚 **Leia também:** [10 Sintomas de Ansiedade que você pode ter](/blog/sintomas-de-ansiedade) e [Os melhores aplicativos para ansiedade](/blog/aplicativos-para-ansiedade).
+
 > ⚠️ Este conteúdo é informativo e não substitui acompanhamento profissional. Se a ansiedade for frequente ou intensa, procure um psicólogo ou médico.
 
 ## O que é ansiedade (e por que ela acontece)
@@ -227,7 +447,7 @@ O que você consome afeta diretamente seu nível de ansiedade.
 
 ### 6. Sono de qualidade (a base de tudo)
 
-Dormir mal e ansiedade formam um ciclo vicioso: a ansiedade atrapalha o sono, e a falta de sono aumenta a ansiedade.
+Dormir mal e ansiedade formam um ciclo vicioso: [a ansiedade atrapalha o sono](/blog/ansiedade-noturna), e a falta de sono aumenta a ansiedade.
 
 **Como fazer:**
 - Evite telas pelo menos 1 hora antes de dormir (a luz azul inibe a melatonina).
@@ -278,7 +498,7 @@ Talvez a técnica mais difícil — e uma das mais necessárias.
 - Reserve 1 dia por semana com menos redes sociais.
 - Ative o modo avião 1 hora antes de dormir.
 
-**Por que funciona:** o fluxo constante de estímulos mantém o cérebro em estado de alerta. Pequenas pausas dão espaço para o sistema nervoso se regular.
+**Por que funciona:** o fluxo constante de estímulos mantém o cérebro em estado de alerta. Pequenas pausas dão espaço para o sistema nervoso se regular. Entenda melhor em [Ansiedade por Redes Sociais](/blog/ansiedade-por-redes-sociais).
 
 ## Como aplicar as técnicas no dia a dia
 
@@ -325,6 +545,8 @@ Comece hoje escolhendo **uma** técnica desta lista e pratique-a por sete dias. 
     content: `**Você abre o Instagram "só por um minuto" e, quando percebe, já se passou meia hora — e você se sente pior do que antes.** Se isso soa familiar, saiba que não é falta de força de vontade. As redes sociais foram cuidadosamente projetadas para capturar e prender sua atenção, e esse design tem um preço para a saúde mental.
 
 Neste artigo, você vai entender por que as redes alimentam a ansiedade, reconhecer os sinais de alerta e, principalmente, encontrar um plano prático para usar essas ferramentas sem que elas usem você.
+
+> 📚 **Leia também:** [10 Sintomas de Ansiedade](/blog/sintomas-de-ansiedade) e [10 Técnicas para Controlar a Ansiedade](/blog/10-tecnicas-para-ansiedade).
 
 > ⚠️ Conteúdo informativo. Se a ansiedade estiver comprometendo sua rotina, procure um profissional de saúde mental.
 
@@ -425,6 +647,8 @@ Comece pequeno. Escolha **uma** etapa deste plano e pratique-a por uma semana. A
     content: `**"Será que a inteligência artificial vai substituir o meu trabalho?"** Essa pergunta tira o sono de milhões de profissionais — e não é para menos. A cada nova ferramenta de IA que viraliza, cresce também uma forma específica de ansiedade: o medo de se tornar obsoleto.
 
 Esse medo é real e legítimo. Mas, como toda ansiedade, ele pode ser compreendido e canalizado de forma produtiva. Neste artigo, você vai entender por que a IA gera tanta angústia e, mais importante, sair com um plano concreto para transformar essa preocupação em vantagem.
+
+> 📚 **Leia também:** [10 Técnicas para Controlar a Ansiedade](/blog/10-tecnicas-para-ansiedade) e [10 Sintomas de Ansiedade](/blog/sintomas-de-ansiedade).
 
 > ⚠️ Conteúdo informativo. Se a ansiedade estiver afetando seu bem-estar, procure apoio profissional.
 

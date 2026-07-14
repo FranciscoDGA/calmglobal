@@ -50,6 +50,7 @@ export const categoryLabels: Record<string, string> = {
   'ansiedade-trabalho': 'Ansiedade no Trabalho',
   'ansiedade-sono': 'Ansiedade e Sono',
   'sintomas-ansiedade': 'Sintomas de Ansiedade',
+  'aplicativos-ansiedade': 'Aplicativos e Ferramentas',
 };
 
 export function categoryLabel(slug: string): string {
