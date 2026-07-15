@@ -75,6 +75,7 @@ export const categoryLabels: Record<string, string> = {
   'ansiedade-financeira': 'Ansiedade Financeira',
   'ansiedade-maternidade': 'Ansiedade na Maternidade',
   'bem-estar-emocional': 'Bem-Estar Emocional',
+  'ansiedade-adolescentes': 'Ansiedade em Adolescentes',
 };
 
 export function categoryLabel(slug: string): string {
