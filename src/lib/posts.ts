@@ -1,12 +1,13 @@
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import { samplePosts } from '@/data/samplePosts';
 import { morePosts } from '@/data/morePosts';
+import { morePosts2 } from '@/data/morePosts2';
 import type { Language, Post } from '@/types';
 
 const DEFAULT_LANGUAGE: Language = 'pt-br';
 
 /** Todos os posts de exemplo (fallback sem Supabase). */
-const allSamplePosts: Post[] = [...samplePosts, ...morePosts];
+const allSamplePosts: Post[] = [...samplePosts, ...morePosts, ...morePosts2];
 
 type GetPostsOptions = {
   language?: Language;

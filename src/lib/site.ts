@@ -69,6 +69,12 @@ export const categoryLabels: Record<string, string> = {
   'tratamentos-naturais': 'Tratamentos Naturais',
   'ansiedade-criancas': 'Ansiedade em Crianças',
   'meditacao-mindfulness': 'Meditação e Mindfulness',
+  'tipos-de-ansiedade': 'Tipos de Ansiedade',
+  'terapias': 'Terapias e Tratamentos',
+  'ansiedade-relacionamentos': 'Ansiedade e Relacionamentos',
+  'ansiedade-financeira': 'Ansiedade Financeira',
+  'ansiedade-maternidade': 'Ansiedade na Maternidade',
+  'bem-estar-emocional': 'Bem-Estar Emocional',
 };
 
 export function categoryLabel(slug: string): string {
