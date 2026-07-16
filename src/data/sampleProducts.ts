@@ -28,36 +28,9 @@ export const sampleProducts: Product[] = [
     is_active: true,
     created_at: '2026-07-14T09:00:00Z',
   },
-  {
-    id: '10000000-0000-0000-0000-000000000002',
-    title: 'Guia Definitivo para Controlar a Ansiedade na Era Digital',
-    slug: 'guia-definitivo-ansiedade-era-digital',
-    description:
-      'E-book completo com 20 técnicas e exercícios práticos para dominar a ansiedade causada por IA, redes sociais e a vida moderna. Mais de 40 páginas.',
-    price: 49.9,
-    type: 'ebook',
-    // 👉 Cole aqui o link de checkout da Hotmart deste e-book:
-    checkout_url: '',
-    benefits: [
-      '40+ páginas com 20 técnicas e exercícios',
-      'Exercícios práticos ao final de cada capítulo',
-      'Checklist diário e planner anti-ansiedade',
-      'Acesso vitalício + atualizações gratuitas',
-      'Garantia de 7 dias — reembolso sem perguntas',
-    ],
-    faq: [
-      { question: 'Quantas páginas tem o e-book?', answer: 'Mais de 40 páginas de conteúdo prático e direto ao ponto.' },
-      { question: 'Como recebo o material após a compra?', answer: 'O download é liberado imediatamente após a confirmação do pagamento.' },
-      { question: 'Existe garantia?', answer: 'Sim. Você tem 7 dias para pedir reembolso caso não fique satisfeito.' },
-      { question: 'Preciso de conhecimento prévio?', answer: 'Não. O guia foi escrito para qualquer pessoa, do iniciante ao mais experiente.' },
-    ],
-    download_url: null,
-    image_url:
-      'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80',
-    image_alt: 'Capa do e-book Guia Definitivo para Controlar a Ansiedade na Era Digital',
-    is_active: true,
-    created_at: '2026-07-14T09:00:00Z',
-  },
+  // O "Guia Definitivo" agora é ISCA GRATUITA (lead magnet), entregue pela
+  // landing /produtos/guia-definitivo-ansiedade. Por isso não é mais um
+  // produto pago no catálogo.
   {
     id: '10000000-0000-0000-0000-000000000004',
     title: 'Guia Definitivo para Ansiedade Social',
