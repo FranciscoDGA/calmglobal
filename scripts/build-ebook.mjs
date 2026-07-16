@@ -27,19 +27,19 @@ marked.setOptions({ gfm: true, breaks: false });
 const body = marked.parse(md);
 
 const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
-  @page { size: A4; margin: 18mm 16mm; }
+  @page { size: A4; margin: 22mm 20mm; }
   * { box-sizing: border-box; }
-  body { font-family: Georgia, 'Times New Roman', serif; color: #1f2937; line-height: 1.6; font-size: 12pt; }
-  h1, h2, h3 { font-family: Georgia, serif; color: #111827; line-height: 1.25; }
-  h1 { page-break-before: always; color: #1E3A8A; font-size: 21pt; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 3px solid #D4AF37; }
-  h2 { font-size: 15pt; color: #1E3A8A; margin: 20px 0 8px; }
-  h3 { font-size: 12.5pt; margin: 14px 0 6px; }
-  p { margin: 0 0 10px; }
-  ul, ol { margin: 0 0 12px; padding-left: 22px; }
-  li { margin: 4px 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #1f2937; line-height: 1.75; font-size: 13pt; }
+  h1, h2, h3 { font-family: Georgia, serif; color: #111827; line-height: 1.3; }
+  h1 { page-break-before: always; color: #1E3A8A; font-size: 25pt; margin: 8px 0 22px; padding-bottom: 12px; border-bottom: 3px solid #D4AF37; }
+  h2 { font-size: 17pt; color: #1E3A8A; margin: 28px 0 12px; }
+  h3 { font-size: 13.5pt; margin: 20px 0 8px; }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 16px; padding-left: 24px; }
+  li { margin: 7px 0; }
   strong { color: #111827; }
   hr { display: none; }
-  blockquote { margin: 12px 0; padding: 10px 16px; background: #f0f4ff; border-left: 4px solid #D4AF37; border-radius: 4px; color: #374151; }
+  blockquote { margin: 18px 0; padding: 14px 20px; background: #f0f4ff; border-left: 4px solid #D4AF37; border-radius: 4px; color: #374151; }
   blockquote p { margin: 0; }
   a { color: #1E3A8A; }
   table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 10pt; }

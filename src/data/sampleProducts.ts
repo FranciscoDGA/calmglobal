@@ -33,20 +33,20 @@ export const sampleProducts: Product[] = [
     title: 'Guia Definitivo para Controlar a Ansiedade na Era Digital',
     slug: 'guia-definitivo-ansiedade-era-digital',
     description:
-      'E-book completo com 20 técnicas e exercícios práticos para dominar a ansiedade causada por IA, redes sociais e a vida moderna. 50 páginas.',
+      'E-book completo com 20 técnicas e exercícios práticos para dominar a ansiedade causada por IA, redes sociais e a vida moderna. Mais de 40 páginas.',
     price: 49.9,
     type: 'ebook',
     // 👉 Cole aqui o link de checkout da Hotmart deste e-book:
     checkout_url: '',
     benefits: [
-      '50 páginas com 20 técnicas comprovadas pela ciência',
+      '40+ páginas com 20 técnicas e exercícios',
       'Exercícios práticos ao final de cada capítulo',
       'Checklist diário e planner anti-ansiedade',
       'Acesso vitalício + atualizações gratuitas',
       'Garantia de 7 dias — reembolso sem perguntas',
     ],
     faq: [
-      { question: 'Quantas páginas tem o e-book?', answer: 'São 50 páginas de conteúdo prático e direto ao ponto.' },
+      { question: 'Quantas páginas tem o e-book?', answer: 'Mais de 40 páginas de conteúdo prático e direto ao ponto.' },
       { question: 'Como recebo o material após a compra?', answer: 'O download é liberado imediatamente após a confirmação do pagamento.' },
       { question: 'Existe garantia?', answer: 'Sim. Você tem 7 dias para pedir reembolso caso não fique satisfeito.' },
       { question: 'Preciso de conhecimento prévio?', answer: 'Não. O guia foi escrito para qualquer pessoa, do iniciante ao mais experiente.' },
@@ -57,6 +57,36 @@ export const sampleProducts: Product[] = [
     image_alt: 'Capa do e-book Guia Definitivo para Controlar a Ansiedade na Era Digital',
     is_active: true,
     created_at: '2026-07-14T09:00:00Z',
+  },
+  {
+    id: '10000000-0000-0000-0000-000000000004',
+    title: 'Guia Definitivo para Ansiedade Social',
+    slug: 'guia-definitivo-ansiedade-social',
+    description:
+      'E-book completo para superar o medo de ser julgado: entenda a ansiedade social, reprograme sua mente e siga um plano prático de exposição gradual.',
+    price: 59.9,
+    type: 'ebook',
+    // 👉 Cole aqui o link de checkout da Hotmart deste e-book:
+    checkout_url: '',
+    benefits: [
+      'Plano de exposição gradual passo a passo',
+      '20 micro-exposições prontas para praticar',
+      'Guias para situações específicas (falar em público, festas, reuniões...)',
+      'Diário de exposição + checklist + plano de 30 dias',
+      'Acesso vitalício e garantia de 7 dias',
+    ],
+    faq: [
+      { question: 'Este e-book serve para timidez?', answer: 'Ele foca na ansiedade social, mas as estratégias ajudam também quem é muito tímido e quer se sentir mais à vontade socialmente.' },
+      { question: 'Como recebo o material?', answer: 'O download em PDF é liberado imediatamente após a confirmação do pagamento.' },
+      { question: 'Preciso de experiência prévia?', answer: 'Não. O guia foi escrito para começar do zero, no seu ritmo.' },
+      { question: 'Existe garantia?', answer: 'Sim. Você tem 7 dias para pedir reembolso caso não fique satisfeito.' },
+    ],
+    download_url: null,
+    image_url:
+      'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80',
+    image_alt: 'Capa do e-book Guia Definitivo para Ansiedade Social',
+    is_active: true,
+    created_at: '2026-07-16T09:00:00Z',
   },
   {
     id: '10000000-0000-0000-0000-000000000003',
