@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: 'hg0mAAEfUhJoXaGNgvTE6DlkvTVjRlj_xmdg06ya1qY',
+  },
 };
 
 const organizationSchema = {
