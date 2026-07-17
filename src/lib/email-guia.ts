@@ -8,7 +8,11 @@
  * O placeholder {{unsubscribe}} é substituído automaticamente pelo MailerLite.
  */
 export function emailTemplate(nome: string, siteUrl?: string) {
-  const base = siteUrl || process.env.SITE_URL || 'https://calmaglobal.com.br';
+  const base =
+    siteUrl ||
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.SITE_URL ||
+    'https://calmglobal.vercel.app';
   const pdfUrl = `${base}/downloads/guia-definitivo-ansiedade.pdf`;
 
   return `

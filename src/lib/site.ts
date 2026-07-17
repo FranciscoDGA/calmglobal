@@ -12,7 +12,10 @@ export const siteConfig = {
   tagline: 'Controle a Ansiedade na Era Digital',
   description:
     'Dicas práticas e técnicas comprovadas pela ciência para reduzir a ansiedade causada por IA, redes sociais e pela vida moderna.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  // URL oficial do site. Em produção usa NEXT_PUBLIC_SITE_URL (defina quando
+  // tiver o domínio próprio, ex.: https://calmaglobal.com.br). Sem a variável,
+  // usa a URL da Vercel — nunca "localhost" em produção (importante p/ SEO/sitemap).
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://calmglobal.vercel.app',
   defaultLanguage: 'pt-br' as Language,
   locale: 'pt_BR',
   keywords: [
